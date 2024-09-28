@@ -14,4 +14,6 @@ A theme for Zen Browser that moves the URL bar to the bottom of the user interfa
 * Type: `svg.context-properties.content.enabled` and set to true.
 * Restart Zen
 
-
+## Current Issues:
+* The background of the URL bar is not the exact color as the rest of the UI (sidebar, etc). I'm not sure if there is layering of multiple transparent backgrounds or if I am just not using the right color variable.
+* The width of the URL bar is set to `width: calc(100% - 184px);`. The 184px  is mant to make up for the sidebar width displacement. Without it, the bar elements will go out of bounds. The 184px isn't exact, depending on how wide your sidebar is. Originally, I used a more complicated calc() function with the variables icons sizs/padding, but it just wasn't being intepreted properly.
